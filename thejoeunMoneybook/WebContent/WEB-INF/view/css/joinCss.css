@@ -1,0 +1,146 @@
+@charset "UTF-8";
+*{
+	background-color:#f5f5f5;
+	
+	margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+    
+    font-family: Montserrat, "sans-serif"; 
+}
+
+a{
+	text-decoration:none;
+}
+
+body{
+	overflow-y:scroll;
+}
+
+#join_container{
+	display: grid;
+ 	height:100%;
+  	width:100%;
+  	grid-template-rows:
+  	100px 1fr;
+  	grid-template-areas:
+  	"top"
+  	"main";
+   	grid-row-gap: 20px;
+}
+
+#header{
+    background-color: #ffcccc;
+    line-height: 100px;
+    grid-area: top;
+    grid-row: 1;
+    box-shadow: 0 0 20px 0 rgba(0,0,0, 0.2);
+    padding-left:15px;
+}
+
+#title{
+    text-align: left;
+	color: #51565d;
+    font-weight: bold;
+    font-size: 200%;
+    background-color: #ffcccc;
+    font-family: 'Nanum Gothic Coding', monospace;
+	letter-spacing:3px;
+	text-decoration:none;
+	text-shadow: 2px 2px 0 #f5f5f5;
+}
+
+#join{
+	grid-area: main;
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin:5%;
+}
+
+#join_title{
+	font-weight: 800;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    margin:10px;
+}
+
+.join_form{
+	padding-top: 26px;
+	width: 100%;
+    max-width: 768px;
+    min-width: 500px;
+}
+
+#id, #pass, #passck, #name, #email{
+	display:block;
+	padding:11px 0 7px;
+	font-size:13px;
+	line-height:18px;
+	text-align:left;
+	font-weight:700;
+}
+
+#id_input, #pass_input, #passck_input, #name_input, #email_input{
+	width: 78%;
+    border: 1px solid #ccc;
+    padding: 14px 0 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #111;
+    font-weight: 700;
+    text-indent: 12px;
+    border-radius: 3px;
+}
+
+#id_button, #email_button{
+	width: 20%;
+    border:1px solid #fecdcd;
+    padding: 14px 0 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fabfbf;
+    background-color: #f8f8f8;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.button{
+	margin: 6.08% 0 0;
+}
+
+#search{
+	background-color: #ffcccc;
+    text-decoration: none;
+    margin: 18px 0 0;
+    display: block;
+    border: 1px solid #fecdcd;
+    color: white;
+    padding: 16px 17px;
+    font-size: 17px;
+    line-height: 20px;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 18px 0 0;
+    text-align: center;
+    width:100%;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+#idtext, #passtext, #passchtext, #nametext, #emailtext{
+	color:red;
+	padding-top: 10px;
+    padding-left: 5px;
+}
